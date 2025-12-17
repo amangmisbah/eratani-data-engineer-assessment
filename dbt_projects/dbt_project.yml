@@ -1,0 +1,25 @@
+name: 'eratani_dbt'
+version: '1.0.0'
+config-version: 2
+
+profile: 'eratani_dbt'
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+models:
+  eratani_dbt:
+    +materialized: view
+
+models:
+  eratani_dbt:
+    marts:
+      +materialized: table
