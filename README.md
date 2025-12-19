@@ -74,7 +74,7 @@ docker compose up -d
 ```
 2. Akses Airflow UI
 ```
-URL: http://localhost:8080
+URL: http://localhost:8089
 
 Username: admin
 
